@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo地址</title>
+    <style type="text/css">
+        body,div,ul,a,li{margin: 0;padding: 0;}
+        body{background-color: #ccc;}
+        a,li{text-decoration: none;list-style: none;}
+        a:hover{color: #ff6600;}
+        #nav{overflow: hidden;}
+        #nav{background: url("images/banner.jpg") left top no-repeat;}
+        .nav_list{float: right;margin: 10px 20px 10px auto;}
+        .nav_list li{float: left;margin-right: 20px;}
+        .nav_list a{line-height:50px; }
+        #main{width: 500px;margin: 50px auto;margin-right: 250px;}
+        .demo li{text-indent: 20px;margin-top: 10px;}
+        /*#waterfall,#calendar{display: none;}*/
+
+    </style>
+    <script>
+        window.onload=function () {
+            var oDiv=document.getElementsByClassName('demo');
+            var calendar=oDiv[0].getElementsByTagName("h3")[0];
+            var waterFall=oDiv[1].getElementsByTagName("h3")[0];
+            var oUl0=document.getElementById('calendar');
+            var oUl1=document.getElementById('waterfall');
+            calendar.onclick=function () {
+                    oUl0.style.display= (oUl0.style.display=='none')?'block':'none';
+            }
+            waterFall.onclick=function () {
+                oUl1.style.display= (oUl1.style.display=='none')?'block':'none';
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="nav">
+
+    <div class="nav_list">
+        <ul>
+            <li><a href="http://www.cnblogs.com/foreverwith/" target="_blank">博客</a></li>
+            <li><a href="https://github.com/foreverwith" target="_blank">GitHub</a></li>
+            <li><a href="#">邮箱</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </div>
+</div>
+<!--<div id="left">-->
+    <!--<img src="images/sakura.jpg" >-->
+<!--</div>-->
+<div id="main">
+
+    <div class="demo">
+        <h3><a href="#">1.年历实现</a></h3>
+        <ul id="calendar" style="display: none;">
+            <li><a  href="https://foreverwith.github.io/webpage/lesson2/08.html" target="_blank">JavaScript实现简易年历</a></li>
+        </ul>
+    </div>
+    <div class="demo">
+        <h3><a href="#">2.瀑布流的三种实现方式</a></h3>
+        <ul id="waterfall" style="display: none;">
+            <li><a href="https://foreverwith.github.io/myblog/JavaScript/index.html" target="_blank">JavaScript实现瀑布流</a></li>
+            <li><a href="https://foreverwith.github.io/myblog/jQuery/index.html" target="_blank">jQuery实现瀑布流</a></li>
+            <li><a href="https://foreverwith.github.io/myblog/CSS3/index.html" target="_blank">CSS3实现瀑布流</a></li>
+        </ul>
+
+    </div>
+</div>
+
+</body>
+</html>
