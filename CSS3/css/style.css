@@ -1,0 +1,17 @@
+#main{
+    -webkit-column-width: 187px;
+    -moz-column-width: 187px;
+    -o-column-width:187px;
+    -ms-column-width:187px;
+    /*-webkit-column-count:6;*/
+    /*-moz-column-count:6;*/
+    /*-o-column-count:6;*/
+    /*-ms-column-count:6;*/
+}
+
+.box{padding:10px 0 0 0;}
+
+.pic{padding: 10px;border: 1px solid #ccc;
+border-radius: 5px; box-shadow: 0 0 5px #ccc;width: 165px;}
+
+.pic img{display: block;width: 165px;height: auto;}
